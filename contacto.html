@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilo1.css">
 </head>
 <body>
+    <h1  > Café París    </h1>
+    <p id="eslogan">Un momento de relax</p>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="carta.html">Nuestra carta</a></li>
+        <li><a href="contacto.html">Contácte con nosotros</a></li>
+    </ul>
+    <h2>Contáctate con nosotros</h2>
+    <form action="“procesacontacto.php”" method="get">
+        <fieldset>
+            <p>
+            <label>
+                Nombre y Apellidos:
+            <input type="text" name="nombreyapell" value="" required placeholder="Escriba su nombre y apellidos">
+            </label></p>
+            <p>
+            <label>
+                    Fecha Nacimiento:<input type="date" name="fecha_nac" required >
+                </label></p>
+                <p>
+                    <label>
+                    Suele consumir:<input type="radio" name="consumo" value="c" > 
+                    Café<input type="radio" name="consumo" value="t"> Té
+                    <input type="radio" name="consumo" value="a" > 
+                    Ambos
+                    </label></p>
+                    <p>
+                        <label >
+                            Numeros de cafes al dia:<input type="number" name="cafes" min="1" max="5"
+
+                            value=”1”>
+
+                        </label>
+                    </p>
+                    <p><label>
+                       Seleccione su cafeteria:<select name="nacionalidad">
+                            <option value="ma" selected>Madrid</option>
+                            <option value="ba">Barcelona</option>
+                            <option value="se">Sevilla</option>
+                            </select>
+                        </p> 
+                    </label><p>
+                        <label>
+
+                        <input type="checkbox" name="info" checked> Deseo recibir información
+                    </label>
+                    </p>
+              
+            
+            <input type="submit" value="Enviar Datos"> envíar 
+            <input type="reset" value="Reiniciar"> reiniciar       
+         </fieldset>
+
+
+    </form>
     
 </body>
 </html>
